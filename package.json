@@ -1,0 +1,17 @@
+{
+  "name": "shell-scripts-school",
+  "version": "1.0.0",
+  "description": "シェルスクリプトの学習用",
+  "repository": "git@github.com:RyoWakabayashi/shell-scripts-school.git",
+  "author": "Ryo Wakabayashi <gfdmkm573@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": { },
+  "scripts": {
+    "prepare": "bash -c \"cp ./git_hooks/commit-msg ./.git/hooks/\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2"
+  }
+}
