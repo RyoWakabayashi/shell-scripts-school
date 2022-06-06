@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  dev:
+    container_name: shell-scripts-school
+    build:
+      context: .
+      args:
+        - RUN_ENV_PROXY=${RUN_ENV_PROXY}
+    tty: true
+    command: /bin/sh -c "while sleep 1000; do :; done"
