@@ -8,7 +8,7 @@ display_usage() {
 
     cat <<EOE
 
-    Hello World!
+    Loop example
 
     構文: ./${ME}
 
@@ -18,9 +18,23 @@ EOE
 
 }
 
-say_hello() {
+loop() {
 
-    echo "Hello World!"
+    for VAL in 1 2 3; do
+        echo "for step ${VAL}!!!"
+    done
+
+    # shellcheck disable=SC2044
+    for FILE in $(find ./files -type f -name '*.txt'); do
+        echo "${FILE##*/}"
+    done
+
+    local count=1
+
+    while [ $count -lt 5 ]; do
+        echo "while step ${count}!!!"
+        count=$((count+1))
+    done
 
 }
 
@@ -37,7 +51,7 @@ main() {
         esac
     done
 
-    say_hello
+    loop
 
 }
 

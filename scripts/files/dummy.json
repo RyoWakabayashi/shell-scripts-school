@@ -1,0 +1,59 @@
+{
+  "employees": [
+    {
+      "name": "Jack",
+      "age": "21",
+      "languages": ["Python", "JavaScript", "Ruby"],
+      "salary": 2000,
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY"
+      }
+    },
+    {
+      "name": "Michael",
+      "age": "32",
+      "languages": ["Go", "JavaScript", "Rust"],
+      "salary": 2900,
+      "address": {
+        "street": "456 Main St",
+        "city": "San Francisco",
+        "state": "CA"
+      }
+    },
+    {
+      "name": "John",
+      "age": "27",
+      "languages": ["PHP", "C#", "Java"],
+      "salary": 1500,
+      "address": {
+        "street": "789 Main St",
+        "city": "New York",
+        "state": "NY"
+      }
+    },
+    {
+      "name": "Kevin",
+      "age": "45",
+      "languages": ["Elixir", "JavaScript", "Ruby"],
+      "salary": 3500,
+      "address": {
+        "street": "1011 Main St",
+        "city": "Seattle",
+        "state": "ST"
+      }
+    },
+    {
+      "name": "George",
+      "age": "36",
+      "languages": ["Java"],
+      "salary": 800,
+      "address": {
+        "street": "1213 Main St",
+        "city": "San Francisco",
+        "state": "CA"
+      }
+    }
+  ]
+}
