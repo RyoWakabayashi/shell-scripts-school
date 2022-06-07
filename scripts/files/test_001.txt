@@ -1,0 +1,4 @@
+001,CAT,a
+002,DOG,b
+003,DUCK,c
+004,cat,d

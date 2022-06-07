@@ -1,4 +1,4 @@
-FROM ubuntu:22.10
+FROM ubuntu:20.04
 
 ARG RUN_ENV_PROXY
 
@@ -59,7 +59,7 @@ RUN groupadd -g $GID $GROUPNAME && \
     useradd -l -m -s /bin/bash -u $UID -g $GID $USERNAME && \
     gpasswd -a ${USER} sudo && \
     echo "${USER}:${PW}" | chpasswd && \
-    sed -i.bak -r s#${HOME}:\(.+\)#${HOME}:/bin/zsh# /etc/passwd && \
+    sed -i.bak -r s#${HOME}:\(.+\)#${HOME}:/bin/bash# /etc/passwd && \
     echo "${USER} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 COPY configs/wsl.conf /etc/wsl.conf
